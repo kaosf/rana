@@ -1,5 +1,12 @@
 # Rana 🐸
 
+```sh
+docker container run --rm -it -u $UID:$GID -v $PWD:/app -w /app rust bash
+cargo run --release -- --vanity-n-prefix ka000
+exit
+rm -rf target
+```
+
 ![Rana](rana.png)
 
 Mine public keys that can be used with nostr.
